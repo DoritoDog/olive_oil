@@ -1,0 +1,395 @@
+header {
+  background-image: url('./images/morocco-bg.jpg');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 50%;
+  height: 100vh;
+  width: 100vw;
+  max-width:100%;
+}
+
+.header-bg {
+  background-image: url('./images/atlas.png');
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.header-text {
+  height: 100vh;
+}
+
+/* #region Navbar */
+
+.navbar {
+  background-color: white;
+  border-bottom: 2px solid maroon;
+}
+
+.navbar-links {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.navigation-bar-dropdown {
+  float: left;
+  overflow: hidden;
+  z-index: 3;
+}
+
+.navigation-bar-dropdown .dropdown-button, .navigation-link {
+  font-size: 18px; 
+  border: none;
+  outline: none;
+  color: black;
+  font-weight: 500;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-button a {
+  color: black;
+}
+
+.dropdown-button a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  background-color: white;
+  min-width: 260px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 2;
+}
+
+.dropdown-content a {
+  color: black;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 400;
+  
+  float: none;
+  padding: 12px 16px;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+.navigation-link, .bottom-navigation-bar span{
+  float: left;
+  font-size: 18px;
+  font-weight: 500;
+
+  text-align: center;
+  text-decoration: none;
+
+  padding: 14px 20px;
+}
+
+.navigation-link:hover, .dropdown-button:hover {
+  color: #333;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.navbar-brand {
+  font-family: Lobster;
+  margin-left: 20px;
+  color: maroon;
+}
+
+.collapse-button {
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* #endregion */
+
+/* #region Utility */
+
+.centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row-dir {
+  display: flex;
+  flex-direction: row;
+}
+
+/* #endregion */
+
+.landing-text {
+  font-family: 'Patua One', cursive;
+  font-size: 80px;
+  color: maroon;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  position: relative;
+  top: 40%;
+  /* text-shadow: 4px 4px 4px hsla(0, 0%, 0%, 0.5); */
+}
+
+.landing-text-2 {
+  color: maroon;
+  position: relative;
+  top: 40%;
+}
+
+section {
+  height: 100vh;
+}
+
+.section-title {
+  padding-top: 50px;
+  margin-bottom: 100px;
+  font-family: 'Patua One', cursive;
+  text-transform: uppercase;
+}
+
+/* #region Showcase */
+
+.products-showcase {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.product-category {
+  color: grey;
+  text-transform: uppercase;
+}
+
+.product-col {
+  /* box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1), 0 3px 10px 0 rgba(0, 0, 0, 0.1); */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px;
+  margin: 0 15px;
+  width: 20%;
+}
+
+.product-col:hover {
+  box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.1), 0 5px 5px 0 rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.product-name {
+  text-transform: uppercase;
+  font-family: 'Patua One', cursive;
+}
+
+.product-img {
+  display: flex;
+  justify-content: center;
+}
+
+.product-desc {
+  color: grey;
+  font-size: 18px;
+}
+
+.patua {
+  font-family: 'Patua One', cursive;
+}
+
+.product-col .product-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.product-col .product-buttons button {
+  width: 100%;
+  color: white;
+  background-color: #ff6600;
+  outline: none;
+  border: none;
+  height: 40px;
+  cursor: pointer;
+}
+
+/* #endregion */
+
+#map {
+  width: 50%;
+  margin: auto;
+}
+
+/* #region Footer */
+
+footer {
+  border-top: 1px solid darkgrey;
+  padding-top: 50px;
+}
+
+.footer-lists {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-list a {
+  color: #585858;
+}
+
+@media screen and (max-width: 700px) {
+  .footer-lists {
+    flex-direction: column !important;
+    text-align: center;
+  }
+}
+
+.footer-end {
+  border-top: 1px solid darkgrey;
+  padding-top: 20px;
+}
+
+/* #endregion */
+
+/* #region Features */
+
+.features-container {
+  margin: auto;
+}
+
+.features {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; 
+}
+
+.features-img {
+  margin: auto;
+  width: 50%;
+  display: inline-block;
+} 
+
+.features-col {
+  width: 30%;
+  display: inline-block;
+  margin: auto;
+}
+
+.features-col h5 {
+  margin-bottom: 50px;
+  font-family: 'Marck Script', cursive;
+  font-size: 24px;
+}
+
+/* #endregion */
+
+/* #region Testimonials */
+
+#testimonials {
+  background-image: url('./images/flag.png');
+}
+
+.testimonials-container {
+  display: flex;
+  flex-direction: row;
+  padding: 0 30px;
+}
+
+.customer {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+
+.testimonial {
+  display: flex;
+  flex-direction: row;
+
+  width: 90%;
+  margin-bottom: 30px;
+}
+
+.testimonial-text p {
+  font-family: 'Marck Script', cursive;
+  font-size: 24px;
+}
+
+.testimonial-text h5 {
+  float: right;
+}
+
+.testimonial-col {
+  display: inline;
+}
+
+/* #endregion */
+
+@media only screen and (max-width: 600px) {
+  body {
+    overflow-x:hidden;
+  }
+
+  .navbar-links {
+    display: none !important;
+  }
+
+  .landing-text {
+    margin: auto !important;
+    font-size: 50px !important;
+    top: 0;
+    text-align: center;
+  }
+
+  .landing-text-2 {
+    font-size: 16px;
+    width: 100% !important;
+    text-align: center;
+  }
+
+  .features {
+    flex-direction: column !important;
+  }
+
+  .features-col {
+    width: 90% !important;
+  }
+
+  .section-title {
+    padding-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  .products-showcase {
+    flex-direction: column !important;
+  }
+
+  .product-col {
+    width: 100%;
+  }
+
+  section {
+    height: 100% !important;
+  }
+
+  #map {
+    width: 100%;
+    margin: auto;
+  }
+
+  .testimonials-container {
+    flex-direction: column;
+    padding: 0 10px;
+  }
+}
